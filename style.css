@@ -6,14 +6,12 @@ img {
 
 body {
   background-color: #0F172A;
-}
-
-p,li{
-    color: #E2E8F0;
-}
-
-h3,ul,figcaption,a {
+  h3,ul,figcaption,a {
     color: #38BDF8;
+    }
+    p,li{
+    color: #E2E8F0;
+    }
 }
 
 * {
@@ -21,7 +19,36 @@ h3,ul,figcaption,a {
 }   
 
 .projetred {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #222;
+}
+
+.projetpi {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #222;
+}
+
+header {
     display: block;
-    margin-bottom: #444;
-    color: #444;
+    background-color: #0F172A;
+    color: white;
+    padding: 20px;
+    text-align:left;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+footer {
+    display: block;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
