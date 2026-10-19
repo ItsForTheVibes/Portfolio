@@ -12,6 +12,16 @@ p,li{
     color: #E2E8F0;
 }
 
-h3,ul,figcaption {
+h3,ul,figcaption,a {
     color: #38BDF8;
+}
+
+* {
+    font-family: Arial, sans-serif;
+}   
+
+.projetred {
+    display: block;
+    margin-bottom: #444;
+    color: #444;
 }
