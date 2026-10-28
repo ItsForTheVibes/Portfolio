@@ -1,138 +1,125 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Portfolio Enzo Zaragoci</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- HEADER -->
     <header>
         <h3>Enzo Zaragoci</h3>
-
         <nav>
             <a href="index.html">Accueil</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main>
-
-        <!-- PROFILE -->
         <section class="profil">
-
-            <img
-                src="Photo professionel.jpg"
-                alt="Photo professionnel"
-                width="150"
-                height="200"
-            >
-
+            <img src="Photo professionel.jpg" alt="Photo professionnelle" width="150" height="200">
             <h3>Enzo Zaragoci</h3>
-
-            <p>
-                Étudiant Bachelor 1 de cybersécurité à Ynov Sophia,
-                je m’intéresse au domaine de la cybersécurité
-                et le réseau. Je cherche une alternance/stage
-                pour la rentrée 2027.
-            </p>
-
+            <p>Étudiant Bachelor 1 de cybersécurité à Ynov Sophia, je m’intéresse au domaine de la cybersécurité et au réseau. Je cherche une alternance/stage pour la rentrée 2027.</p>
         </section>
 
-        <!-- COMPETENCES -->
         <section class="competences">
-
             <h3>Compétences:</h3>
-
-            <details class="accordion">
-
-                <summary>Mes compétences</summary>
-
-                <div class="accordion-content">
-
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Git et Github</li>
-                        <li>Linux</li>
-                        <li>Réseau</li>
-                        <li>SQL</li>
-                        <li>Python</li>
-                    </ul>
-
+            <div class="accordion" id="accordionCompetences">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceHTML" aria-expanded="false" aria-controls="competenceHTML">HTML</button>
+                    </h2>
+                    <div id="competenceHTML" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                        <div class="accordion-body">HTML est un langage de balisage utilisé pour structurer les pages web. Je l'utilise pour créer des sites internet et organiser leur contenu.</div>
+                    </div>
                 </div>
-
-            </details>
-
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceCSS" aria-expanded="false" aria-controls="competenceCSS">CSS</button>
+                    </h2>
+                    <div id="competenceCSS" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                        <div class="accordion-body">CSS permet de personnaliser l'apparence des pages web : couleurs, polices, animations et mise en page. Je l'utilise notamment pour le design de mon portfolio.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceGit" aria-expanded="false" aria-controls="competenceGit">Git et GitHub</button>
+                    </h2>
+                    <div id="competenceGit" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                        <div class="accordion-body">Git est un outil de gestion de versions qui permet de suivre les modifications d'un projet. GitHub permet d'héberger des dépôts et de collaborer sur du code.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceLinux" aria-expanded="false" aria-controls="competenceLinux">Linux</button>
+                    </h2>
+                    <div id="competenceLinux" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                        <div class="accordion-body">Linux est un système d'exploitation très utilisé dans les serveurs et la cybersécurité. Je développe mes compétences dans l'utilisation du terminal, des commandes et de l'administration système.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceReseau" aria-expanded="false" aria-controls="competenceReseau">Réseau</button>
+                    </h2>
+                    <div id="competenceReseau" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                        <div class="accordion-body">Je m'intéresse au fonctionnement des réseaux informatiques : adressage IP, protocoles TCP/IP, DNS, routage et communication entre les équipements.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceSQL" aria-expanded="false" aria-controls="competenceSQL">SQL</button>
+                    </h2>
+                    <div id="competenceSQL" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                        <div class="accordion-body">SQL est un langage permettant d'interagir avec des bases de données relationnelles. Il permet notamment de rechercher, ajouter, modifier et supprimer des données.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competencePython" aria-expanded="false" aria-controls="competencePython">Python</button>
+                    </h2>
+                    <div id="competencePython" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                        <div class="accordion-body">Python est un langage de programmation polyvalent utilisé pour le scripting, l'automatisation et la cybersécurité. Je l'utilise pour apprendre à développer des programmes et automatiser certaines tâches.</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- PROJETS -->
         <section class="projets">
-
             <h3>Mes projets:</h3>
-
-            <!-- PROJET RED -->
-            <details class="accordion">
-
-                <summary>Projet Red</summary>
-
-                <div class="accordion-content">
-
-                    <p>Voici mon Projet Red</p>
-
-                    <p>
-                        Voir le Projet :
-                        <a
-                            href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Click ici
-                        </a>
-                    </p>
-
+            <div class="accordion" id="accordionProjets">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projetRed" aria-expanded="false" aria-controls="projetRed">Projet Red</button>
+                    </h2>
+                    <div id="projetRed" class="accordion-collapse collapse" data-bs-parent="#accordionProjets">
+                        <div class="accordion-body">
+                            <p>Voici mon Projet Red, un projet lié à mon apprentissage de la cybersécurité.</p>
+                            <a href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
+                        </div>
+                    </div>
                 </div>
-
-            </details>
-
-            <!-- PI-HOLE -->
-            <details class="accordion">
-
-                <summary>Pi-hole</summary>
-
-                <div class="accordion-content">
-
-                    <p>Voici mon projet Pi-hole</p>
-
-                    <p>
-                        Voir le projet :
-                        <a
-                            href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Click ici
-                        </a>
-                    </p>
-
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projetPihole" aria-expanded="false" aria-controls="projetPihole">Pi-hole</button>
+                    </h2>
+                    <div id="projetPihole" class="accordion-collapse collapse" data-bs-parent="#accordionProjets">
+                        <div class="accordion-body">
+                            <p>Projet autour de Pi-hole, une solution de filtrage DNS permettant de bloquer certaines publicités et requêtes réseau indésirables.</p>
+                            <p>Ce projet permet d'approfondir mes connaissances du DNS et de l'administration réseau.</p>
+                            <a href="https://github.com/ItsForTheVibes" target="_blank" rel="noopener noreferrer">Voir mon GitHub</a>
+                        </div>
+                    </div>
                 </div>
-
-            </details>
-
+            </div>
         </section>
-
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>© 2026 Enzo Zaragoci.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
