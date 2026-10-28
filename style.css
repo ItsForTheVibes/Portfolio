@@ -2,7 +2,6 @@
 /* GENERAL */
 
 * {
-    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
@@ -23,26 +22,25 @@ p, li {
 /* HEADER */
 
 header {
+    display: block;
     background-color: #1E293B;
+    color: #E2E8F0;
     padding: 20px;
     text-align: left;
 }
 
 header h3 {
-    margin-top: 12px;
     margin-bottom: 20px;
 }
 
-nav a {
+header a {
     color: #38BDF8;
-    margin-right: 5px;
 }
 
 /* MAIN */
 
 main {
     padding: 30px;
-    flex: 1;
 }
 
 /* PROFILE */
@@ -64,7 +62,6 @@ main {
 }
 
 .profil p {
-    line-height: 1.6;
     margin-top: 20px;
 }
 
@@ -84,108 +81,67 @@ main {
 /* ACCORDION */
 
 .accordion {
-    background-color: #1E293B;
-    border: 1px solid #334155;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    overflow: hidden;
-    transition: border-color 0.3s ease;
+    --bs-accordion-bg: #1E293B;
+    --bs-accordion-color: #E2E8F0;
+    --bs-accordion-btn-bg: #1E293B;
+    --bs-accordion-btn-color: #38BDF8;
+    --bs-accordion-active-bg: #1E293B;
+    --bs-accordion-active-color: #38BDF8;
+    --bs-accordion-border-color: #E2E8F0;
+    --bs-accordion-btn-focus-box-shadow: none;
 }
 
-/* ACCORDION TITLE */
+.accordion-item {
+    background-color: #1E293B;
+    border: 1px solid #E2E8F0;
+    margin-bottom: 20px;
+}
 
-.accordion summary {
-    padding: 20px;
+.accordion-button {
+    background-color: #1E293B;
     color: #38BDF8;
     font-size: 18px;
     font-weight: bold;
-    cursor: pointer;
-
-    list-style: none;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    transition: background-color 0.3s ease;
+    padding: 20px;
 }
 
-/* REMOVE DEFAULT ARROW */
-
-.accordion summary::-webkit-details-marker {
-    display: none;
-}
-
-/* CUSTOM PLUS ICON */
-
-.accordion summary::after {
-    content: "+";
-    font-size: 25px;
+.accordion-button:not(.collapsed) {
+    background-color: #1E293B;
     color: #38BDF8;
-    transition: transform 0.3s ease;
+    box-shadow: none;
 }
 
-/* MINUS ICON WHEN OPEN */
-
-.accordion[open] summary::after {
-    content: "−";
+.accordion-button:focus {
+    box-shadow: none;
 }
 
-/* HOVER EFFECT */
-
-.accordion summary:hover {
-    background-color: #334155;
-}
-
-/* OPEN ACCORDION */
-
-.accordion[open] {
-    border-color: #38BDF8;
-}
-
-/* ACCORDION CONTENT */
-
-.accordion-content {
-    padding: 0 20px 20px;
+.accordion-body {
+    background-color: #1E293B;
     color: #E2E8F0;
-
-    animation: fadeIn 0.3s ease;
+    padding: 20px;
 }
 
-.accordion-content p,
-.accordion-content li {
+.accordion-body p {
     color: #E2E8F0;
 }
 
-.accordion-content ul {
-    padding-left: 20px;
-}
-
-.accordion-content li {
-    margin-bottom: 8px;
-}
-
-.accordion-content a {
+.accordion-body a {
     color: #38BDF8;
 }
 
-/* OPENING ANIMATION */
+/* ACCORDION ARROW */
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.accordion-button::after {
+    filter: brightness(0) saturate(100%)
+        invert(69%) sepia(67%)
+        saturate(1219%) hue-rotate(163deg)
+        brightness(101%) contrast(95%);
 }
 
 /* FOOTER */
 
 footer {
+    display: block;
     background-color: #1E293B;
     color: #E2E8F0;
     padding: 20px;
@@ -193,28 +149,22 @@ footer {
 }
 
 footer p {
-    text-align: center;
+    margin: 0;
 }
 
-/* MOBILE RESPONSIVE */
+/* MOBILE */
 
 @media (max-width: 600px) {
-
     main {
         padding: 20px;
     }
 
-    .profil p {
-        font-size: 15px;
-    }
-
-    .accordion summary {
+    .accordion-button {
         padding: 15px;
         font-size: 16px;
     }
 
-    .accordion-content {
-        padding: 0 15px 15px;
+    .accordion-body {
+        padding: 15px;
     }
-
 }
