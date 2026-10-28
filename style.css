@@ -1,54 +1,91 @@
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}   
 
-body {
-  background-color: #0F172A;
-  h3,h2,ul,figcaption,a {
+/* ACCORDION */
+
+.accordion {
+    background-color: #1E293B;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/* Clickable title */
+.accordion summary {
+    padding: 20px;
     color: #38BDF8;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hide default arrow */
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Custom arrow */
+.accordion summary::after {
+    content: "+";
+    font-size: 24px;
+    color: #38BDF8;
+    transition: transform 0.3s ease;
+}
+
+/* Change icon when open */
+.accordion[open] summary::after {
+    content: "−";
+}
+
+/* Hover effect */
+.accordion summary:hover {
+    background-color: #334155;
+}
+
+/* Opened accordion */
+.accordion[open] {
+    border-color: #38BDF8;
+}
+
+/* Accordion content */
+.accordion-content {
+    padding: 0 20px 20px;
+    color: #E2E8F0;
+    animation: fadeIn 0.3s ease;
+}
+
+.accordion-content a {
+    color: #38BDF8;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
     }
-    p,li{
-    color: #E2E8F0;
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-* {
-    font-family: Arial, sans-serif;
-}   
+/* Mobile */
+@media (max-width: 600px) {
+    .accordion summary {
+        padding: 15px;
+        font-size: 16px;
+    }
 
-.projetred {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #E2E8F0;
-    background-color: #1E293B ;
-}
+    .accordion-content {
+        padding: 0 15px 15px;
+    }
 
-.projetpi {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #E2E8F0;
-    background-color: #1E293B ;
-}
-
-header {
-    display: block;
-    background-color: #1E293B ;
-    color: #E2E8F0;
-    padding: 20px;
-    text-align:left;
-}
-
-main {
-    flex: 1;
-    padding: 30px;
-}
-
-footer {
-    display: block;
-    background-color: #1E293B ;
-    color: #E2E8F0;
-    padding: 20px;
-    text-align: center;
+    figure {
+        margin: 15px 0;
+    }
 }
