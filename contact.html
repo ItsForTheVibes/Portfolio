@@ -1,27 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Contact moi!</title>
-    </head>
-    <header>
-        <h3>
-            Enzo Zaragoci
-        </h3>
-        <a href="index.html">Acceuil</a>
-        <a href="contact.html">Contact</a>   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacter Enzo Zaragoci, étudiant en cybersécurité à Ynov Sophia.">
+    <title>Contact | Enzo Zaragoci</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg container-xl">
+            <a class="navbar-brand" href="index.html">EZ<span>.</span> <small>ENZO ZARAGOCI</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Afficher le menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html#apropos">À propos</a>
+                    <a class="nav-link" href="index.html#competences">Compétences</a>
+                    <a class="nav-link" href="index.html#projets">Projets</a>
+                    <a class="nav-link" href="index.html#experiences">Expériences</a>
+                    <a class="nav-link" href="index.html#formation">Formation</a>
+                    <a class="nav-link nav-contact" href="contact.html">Contact ↗</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <body>
-        <h2>Me contacter</h2>
-        <p>Si vous voulez me contacter, regardez ci dessous:</p>
-        <ul>
-            <li>Mon Linkedin: <a href="https://www.linkedin.com/in/enzo-zaragoci-986246273/?isSelfProfile=true">Linkedin</a> </li>
-            <li>Mon Github: <a href="https://github.com/ItsForTheVibes">Github</a></li>
-            <li>Mon Mail: <a href="mailto:enzozaragoci71@gmail.com" target="_blank" rel=noopener noreferrer"">Gmail</a></li>
-        </ul>
-    </body>
+
+    <main class="contact-page container-xl">
+        <p class="section-number">CONTACT / RESTONS EN CONTACT</p>
+        <h1>Parlons de votre <span>projet.</span></h1>
+        <p class="contact-intro">Vous souhaitez échanger sur la cybersécurité, les réseaux ou une opportunité de stage ou d'alternance ? N'hésitez pas à me contacter. Je suis toujours intéressé par de nouvelles expériences et opportunités d'apprentissage.</p>
+
+        <div class="contact-grid">
+            <a class="contact-card" href="mailto:enzozaragoci71@gmail.com">
+                <span class="contact-icon">✉</span>
+                <h2>Email</h2>
+                <p>enzozaragoci71@gmail.com</p>
+                <span class="contact-action">Envoyer un email ↗</span>
+            </a>
+            <a class="contact-card" href="https://www.linkedin.com/in/enzo-zaragoci-986246273/" target="_blank" rel="noopener noreferrer">
+                <span class="contact-icon">in</span>
+                <h2>LinkedIn</h2>
+                <p>Retrouvez mon parcours, ma formation et mes expériences professionnelles.</p>
+                <span class="contact-action">Voir mon profil ↗</span>
+            </a>
+            <a class="contact-card" href="https://github.com/ItsForTheVibes" target="_blank" rel="noopener noreferrer">
+                <span class="contact-icon">&lt;/&gt;</span>
+                <h2>GitHub</h2>
+                <p>Découvrez mes projets personnels et mon apprentissage du développement.</p>
+                <span class="contact-action">Voir mes projets ↗</span>
+            </a>
+            <a class="contact-card" href="https://tryhackme.com/p/ItsForTheVibes" target="_blank" rel="noopener noreferrer">
+                <span class="contact-icon">⌘</span>
+                <h2>TryHackMe</h2>
+                <p>Suivez ma progression et mes activités de formation en cybersécurité.</p>
+                <span class="contact-action">Voir mon profil ↗</span>
+            </a>
+        </div>
+    </main>
+
     <footer>
-        <p style = "text-align: center">© 2026 Enzo Zaragoci.</p>
+        <div class="container-xl footer-inner">
+            <p>© 2026 Enzo Zaragoci</p>
+            <p>Cybersécurité · Linux · Réseaux</p>
+            <a href="index.html">Retour à l'accueil ↑</a>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
