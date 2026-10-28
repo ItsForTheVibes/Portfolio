@@ -4,120 +4,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Enzo Zaragoci</title>
+    <meta name="description" content="Portfolio d'Enzo Zaragoci, étudiant en cybersécurité à Ynov Sophia.">
+    <title>Enzo Zaragoci | Cybersécurité & Réseaux</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h3>Enzo Zaragoci</h3>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="contact.html">Contact</a>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg container-xl">
+            <a class="navbar-brand" href="index.html">EZ<span>.</span> <small>ENZO ZARAGOCI</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Afficher le menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#apropos">À propos</a>
+                    <a class="nav-link" href="#competences">Compétences</a>
+                    <a class="nav-link" href="#projets">Projets</a>
+                    <a class="nav-link" href="#experiences">Expériences</a>
+                    <a class="nav-link" href="#formation">Formation</a>
+                    <a class="nav-link nav-contact" href="contact.html">Contact ↗</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="profil">
-            <img src="Photo professionel.jpg" alt="Photo professionnelle" width="150" height="200">
-            <h3>Enzo Zaragoci</h3>
-            <p>Étudiant Bachelor 1 de cybersécurité à Ynov Sophia, je m’intéresse au domaine de la cybersécurité et au réseau. Je cherche une alternance/stage pour la rentrée 2027.</p>
+        <!-- PRESENTATION -->
+        <section class="hero container-xl" id="apropos">
+            <div class="hero-text">
+                <p class="availability"><span class="status-dot"></span> Étudiant en cybersécurité · Ynov Sophia</p>
+                <p class="eyebrow">BONJOUR, JE SUIS</p>
+                <h1>Enzo<br><span>Zaragoci.</span></h1>
+                <h2>Cybersecurity <span>/</span> Linux <span>/</span> Networking</h2>
+                <p class="hero-description">Passionné par la sécurité offensive, les réseaux et l'écosystème Linux, je développe mes compétences grâce à des projets concrets et des challenges sur TryHackMe. Mon objectif est de me spécialiser dans le pentest et le Red Teaming.</p>
+                <p class="hero-description">Actuellement étudiant en Bachelor cybersécurité à Ynov Sophia, je recherche une alternance ou un stage pour la rentrée 2027.</p>
+                <div class="hero-buttons">
+                    <a class="btn-main" href="#projets">Explorer mes projets ↗</a>
+                    <a class="btn-outline-custom" href="contact.html">Me contacter</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/ItsForTheVibes" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/enzo-zaragoci-986246273/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <a href="https://tryhackme.com/p/ItsForTheVibes" target="_blank" rel="noopener noreferrer">TryHackMe ↗</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="photo-container">
+                    <img src="Photo professionel.jpg" alt="Portrait d'Enzo Zaragoci">
+                    <div class="photo-caption">LEARN · BUILD · SECURE</div>
+                </div>
+            </div>
         </section>
 
-        <section class="competences">
-            <h3>Compétences:</h3>
-            <div class="accordion" id="accordionCompetences">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceHTML" aria-expanded="false" aria-controls="competenceHTML">HTML</button>
-                    </h2>
-                    <div id="competenceHTML" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
-                        <div class="accordion-body">HTML est un langage de balisage utilisé pour structurer les pages web. Je l'utilise pour créer des sites internet et organiser leur contenu.</div>
+        <!-- STATISTIQUES -->
+        <section class="stats-section">
+            <div class="container-xl stats-grid">
+                <div><strong>2023</strong><span>Début des labs cyber</span></div>
+                <div><strong>Linux</strong><span>Environnement technique</span></div>
+                <div><strong>3</strong><span>Langues pratiquées</span></div>
+                <div><strong>Red Team</strong><span>Objectif professionnel</span></div>
+            </div>
+        </section>
+
+        <!-- COMPETENCES -->
+        <section class="section container-xl" id="competences">
+            <div class="section-heading">
+                <p class="section-number">01 / EXPERTISE</p>
+                <h2>Mes <span>compétences</span></h2>
+                <p>Des compétences développées à travers mes études, mes projets personnels et ma pratique de la cybersécurité.</p>
+            </div>
+            <div class="skills-layout">
+                <div class="skill-highlight">
+                    <div class="highlight-icon">&lt;/&gt;</div>
+                    <h3>Apprendre par la pratique.</h3>
+                    <p>J'explore les systèmes informatiques, les réseaux et la sécurité offensive afin de mieux comprendre leur fonctionnement et leurs vulnérabilités.</p>
+                    <div class="skill-tags">
+                        <span>Linux</span>
+                        <span>Networking</span>
+                        <span>Cybersecurity</span>
+                        <span>Python</span>
+                        <span>Red Team</span>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceCSS" aria-expanded="false" aria-controls="competenceCSS">CSS</button>
-                    </h2>
-                    <div id="competenceCSS" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
-                        <div class="accordion-body">CSS permet de personnaliser l'apparence des pages web : couleurs, polices, animations et mise en page. Je l'utilise notamment pour le design de mon portfolio.</div>
+                <div class="accordion custom-accordion" id="accordionCompetences">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skillLinux" aria-expanded="true" aria-controls="skillLinux">01 / Linux</button>
+                        </h3>
+                        <div id="skillLinux" class="accordion-collapse collapse show" data-bs-parent="#accordionCompetences">
+                            <div class="accordion-body">Utilisation du terminal Linux, gestion des fichiers et permissions, commandes système et découverte de l'administration Linux. Pratique régulière dans mes labs et projets personnels.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceGit" aria-expanded="false" aria-controls="competenceGit">Git et GitHub</button>
-                    </h2>
-                    <div id="competenceGit" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
-                        <div class="accordion-body">Git est un outil de gestion de versions qui permet de suivre les modifications d'un projet. GitHub permet d'héberger des dépôts et de collaborer sur du code.</div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillReseau" aria-expanded="false" aria-controls="skillReseau">02 / Réseau & DNS</button>
+                        </h3>
+                        <div id="skillReseau" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                            <div class="accordion-body">Compréhension des fondamentaux TCP/IP, de l'adressage IP, du DNS, du routage et des communications entre machines. Mise en pratique avec des projets comme Pi-hole.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceLinux" aria-expanded="false" aria-controls="competenceLinux">Linux</button>
-                    </h2>
-                    <div id="competenceLinux" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
-                        <div class="accordion-body">Linux est un système d'exploitation très utilisé dans les serveurs et la cybersécurité. Je développe mes compétences dans l'utilisation du terminal, des commandes et de l'administration système.</div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillCyber" aria-expanded="false" aria-controls="skillCyber">03 / Cybersécurité</button>
+                        </h3>
+                        <div id="skillCyber" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                            <div class="accordion-body">Apprentissage des fondamentaux de la sécurité informatique, de l'énumération et de la sécurité des systèmes à travers les labs TryHackMe. Intérêt particulier pour le pentest et le Red Teaming.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceReseau" aria-expanded="false" aria-controls="competenceReseau">Réseau</button>
-                    </h2>
-                    <div id="competenceReseau" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
-                        <div class="accordion-body">Je m'intéresse au fonctionnement des réseaux informatiques : adressage IP, protocoles TCP/IP, DNS, routage et communication entre les équipements.</div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillPython" aria-expanded="false" aria-controls="skillPython">04 / Python</button>
+                        </h3>
+                        <div id="skillPython" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                            <div class="accordion-body">Bases de programmation en Python, création de scripts simples, manipulation de données et découverte de l'automatisation de tâches informatiques.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competenceSQL" aria-expanded="false" aria-controls="competenceSQL">SQL</button>
-                    </h2>
-                    <div id="competenceSQL" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
-                        <div class="accordion-body">SQL est un langage permettant d'interagir avec des bases de données relationnelles. Il permet notamment de rechercher, ajouter, modifier et supprimer des données.</div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillSQL" aria-expanded="false" aria-controls="skillSQL">05 / SQL</button>
+                        </h3>
+                        <div id="skillSQL" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                            <div class="accordion-body">Utilisation des bases du langage SQL pour interroger, organiser et manipuler des données dans des bases de données relationnelles.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#competencePython" aria-expanded="false" aria-controls="competencePython">Python</button>
-                    </h2>
-                    <div id="competencePython" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
-                        <div class="accordion-body">Python est un langage de programmation polyvalent utilisé pour le scripting, l'automatisation et la cybersécurité. Je l'utilise pour apprendre à développer des programmes et automatiser certaines tâches.</div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillWeb" aria-expanded="false" aria-controls="skillWeb">06 / HTML & CSS</button>
+                        </h3>
+                        <div id="skillWeb" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                            <div class="accordion-body">Création de sites web en HTML et CSS, structuration du contenu, design responsive et personnalisation des interfaces. Ce portfolio représente un exemple de mise en pratique.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillGit" aria-expanded="false" aria-controls="skillGit">07 / Git & GitHub</button>
+                        </h3>
+                        <div id="skillGit" class="accordion-collapse collapse" data-bs-parent="#accordionCompetences">
+                            <div class="accordion-body">Gestion de versions avec Git, commits, dépôts distants, suivi des modifications et hébergement de projets sur GitHub.</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="projets">
-            <h3>Mes projets:</h3>
-            <div class="accordion" id="accordionProjets">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projetRed" aria-expanded="false" aria-controls="projetRed">Projet Red</button>
-                    </h2>
-                    <div id="projetRed" class="accordion-collapse collapse" data-bs-parent="#accordionProjets">
-                        <div class="accordion-body">
-                            <p>Voici mon Projet Red, un projet lié à mon apprentissage de la cybersécurité.</p>
-                            <a href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
-                        </div>
-                    </div>
+        <!-- PROJETS -->
+        <section class="section section-alt" id="projets">
+            <div class="container-xl">
+                <div class="section-heading">
+                    <p class="section-number">02 / PROJETS</p>
+                    <h2>Ce que je <span>construis</span></h2>
+                    <p>Des projets personnels pour mettre en pratique mes connaissances en cybersécurité et en réseau.</p>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projetPihole" aria-expanded="false" aria-controls="projetPihole">Pi-hole</button>
-                    </h2>
-                    <div id="projetPihole" class="accordion-collapse collapse" data-bs-parent="#accordionProjets">
-                        <div class="accordion-body">
-                            <p>Projet autour de Pi-hole, une solution de filtrage DNS permettant de bloquer certaines publicités et requêtes réseau indésirables.</p>
-                            <p>Ce projet permet d'approfondir mes connaissances du DNS et de l'administration réseau.</p>
-                            <a href="https://github.com/ItsForTheVibes" target="_blank" rel="noopener noreferrer">Voir mon GitHub</a>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-visual red-visual">
+                            <span class="project-symbol">{ RED }</span>
+                            <span class="project-index">01 / SECURITY</span>
                         </div>
-                    </div>
+                        <div class="project-content">
+                            <p class="project-category">CYBERSÉCURITÉ · PROJET PERSONNEL</p>
+                            <h3>Projet Red</h3>
+                            <p>Un projet personnel lié à mon apprentissage de la cybersécurité. Retrouvez les fichiers et les détails du projet sur mon dépôt GitHub.</p>
+                            <div class="project-footer">
+                                <span>Security / Learning</span>
+                                <a href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot" target="_blank" rel="noopener noreferrer">Voir sur GitHub ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-visual pi-visual">
+                            <span class="project-symbol">DNS_</span>
+                            <span class="project-index">02 / NETWORK</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-category">RÉSEAU · LINUX / RASPBERRY PI</p>
+                            <h3>Pi-hole</h3>
+                            <p>Exploration du filtrage DNS avec Pi-hole pour comprendre la résolution de noms, les requêtes réseau et l'administration d'un service réseau.</p>
+                            <div class="project-footer">
+                                <span>DNS / Linux</span>
+                                <span>Dépôt à ajouter</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCES -->
+        <section class="section container-xl" id="experiences">
+            <div class="section-heading">
+                <p class="section-number">03 / EXPÉRIENCES</p>
+                <h2>Mon <span>parcours</span></h2>
+                <p>Des expériences techniques et associatives qui développent mes compétences pratiques, ma communication et mon leadership.</p>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-date">FÉV. 2023 — AUJOURD'HUI</div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag">FORMATION CONTINUE</span>
+                        <h3>Cybersecurity Labs & Training</h3>
+                        <p class="timeline-location">TryHackMe</p>
+                        <p>Entraînement pratique à travers des labs et challenges en cybersécurité : Linux, réseau, sécurité des systèmes, énumération et fondamentaux de la sécurité informatique.</p>
+                        <a href="https://tryhackme.com/p/ItsForTheVibes" target="_blank" rel="noopener noreferrer">Mon profil TryHackMe ↗</a>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-date">AVR. — JUIL. 2025</div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag">LEADERSHIP</span>
+                        <h3>FONMUN Committee Chair</h3>
+                        <p class="timeline-location">Model United Nations · Occitanie</p>
+                        <p>Présidence d'un comité Model United Nations, modération des débats, gestion des procédures et accompagnement des délégués pendant les sessions.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-date">2024 — 2025</div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag">COMMUNICATION</span>
+                        <h3>Délégué — FONMUN & TOUMUN</h3>
+                        <p class="timeline-location">Model United Nations · Occitanie</p>
+                        <p>Participation à des débats sur des enjeux internationaux, négociation de résolutions et représentation d'un pays assigné. Développement de la prise de parole et de l'argumentation.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FORMATION -->
+        <section class="section section-alt" id="formation">
+            <div class="container-xl">
+                <div class="section-heading">
+                    <p class="section-number">04 / FORMATION</p>
+                    <h2>Formation & <span>certifications</span></h2>
+                </div>
+                <div class="education-grid">
+                    <article class="education-card">
+                        <span class="education-icon">↗</span>
+                        <p class="education-date">DEPUIS SEPTEMBRE 2026</p>
+                        <h3>Ynov Sophia</h3>
+                        <p>Bachelor en cybersécurité</p>
+                    </article>
+                    <article class="education-card">
+                        <span class="education-icon">⌘</span>
+                        <p class="education-date">2025 — 2026</p>
+                        <h3>Lycée Henri Matisse</h3>
+                        <p>Baccalauréat · NSI & AMC</p>
+                    </article>
+                    <article class="education-card">
+                        <span class="education-icon">✓</span>
+                        <p class="education-date">CERTIFICATION</p>
+                        <h3>Pre Security Path</h3>
+                        <p>TryHackMe</p>
+                    </article>
+                </div>
+                <p class="education-note">Parcours précédent : Lycée général Clemence Royer (2023–2025).</p>
+            </div>
+        </section>
+
+        <!-- LANGUES -->
+        <section class="section container-xl" id="langues">
+            <div class="section-heading">
+                <p class="section-number">05 / LANGUES</p>
+                <h2>Communication <span>internationale</span></h2>
+            </div>
+            <div class="language-grid">
+                <div class="language-card">
+                    <strong>FR</strong>
+                    <h3>Français</h3>
+                    <p>Langue maternelle / bilingue</p>
+                </div>
+                <div class="language-card">
+                    <strong>EN</strong>
+                    <h3>Anglais</h3>
+                    <p>Langue maternelle / bilingue</p>
+                </div>
+                <div class="language-card">
+                    <strong>ES</strong>
+                    <h3>Espagnol</h3>
+                    <p>Niveau professionnel</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-banner">
+            <div class="container-xl contact-banner-inner">
+                <div>
+                    <p class="section-number">06 / CONTACT</p>
+                    <h2>Construisons quelque chose <span>ensemble.</span></h2>
+                    <p>À la recherche d'une alternance ou d'un stage pour la rentrée 2027. Discutons de cybersécurité, de réseau ou de vos projets.</p>
+                </div>
+                <a class="btn-main" href="contact.html">Me contacter ↗</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Enzo Zaragoci.</p>
+        <div class="container-xl footer-inner">
+            <p>© 2026 Enzo Zaragoci</p>
+            <p>Cybersécurité · Linux · Réseaux</p>
+            <a href="#apropos">Retour en haut ↑</a>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
