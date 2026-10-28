@@ -91,11 +91,16 @@ main {
     --bs-accordion-btn-focus-box-shadow: none;
 }
 
-.accordion-item {
+
+.accordion-item,
+.accordion-item + .accordion-item {
     background-color: #1E293B;
     border: 1px solid #E2E8F0;
+    border-radius: 8px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
+
 
 .accordion-button {
     background-color: #1E293B;
