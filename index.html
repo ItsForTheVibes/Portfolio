@@ -1,46 +1,87 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Portfolio Enzo Zaragoci</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Enzo Zaragoci</title>
+</head>
+
+<body>
     <header>
-        <h3>
-            Enzo Zaragoci
-        </h3>
-        <a href="index.html">Acceuil</a>
-        <a href="contact.html">Contact</a>   
+        <h3>Enzo Zaragoci</h3>
+        <a href="index.html">Accueil</a>
+        <a href="contact.html">Contact</a>
     </header>
-    <body>
-        <p>ㅤ</p>
-        <img src="Photo professionel.jpg" alt="Photo professionel" width="150" height="200">
+
+    <main>
+        <img src="Photo professionel.jpg"
+             alt="Photo professionnel"
+             width="150"
+             height="200">
+
         <h3 style="text-align:center">Enzo Zaragoci</h3>
-        <p style="text-align:center">Étudiant Bachelor 1 de cybersécurité à Ynov Sophia, je m’intéresse au domaine de la cybersécurité et le réseau, Je cherche une alternance/stage pour la rentrée 2027.</p>
+
+        <p style="text-align:center">
+            Étudiant Bachelor 1 de cybersécurité à Ynov Sophia,
+            je m’intéresse au domaine de la cybersécurité et
+            le réseau. Je cherche une alternance/stage
+            pour la rentrée 2027.
+        </p>
+
         <figure>
-        <h3>Competences:</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Git et Github</li>
-                <li>Linux</li>
-                <li>Reseau</li>
-                <li>SQL</li>
-                <li>Python</li>
-            </ul>
-        <h3>Mes projets:</h3>
-        <div class ="projetred">
-            <h3>Projet Red</h3>
-            <p>Voici mon Projet Red</p>
-            <p>Voir le Projet <a href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot">Click ici</a></p>
-        </div>
-        <div class ="projetpi">
-            <h3>Pi-hole</h3>
-            <p>Voici mon projet Pi-hole</p>
-            <p>voir le projet <a href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot">Click ici</a></p>
-        </div>
-    </body>
+            <h3>Compétences:</h3>
+
+            <details class="accordion">
+                <summary>Mes compétences</summary>
+                <div class="accordion-content">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Git et Github</li>
+                        <li>Linux</li>
+                        <li>Réseau</li>
+                        <li>SQL</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </details>
+
+            <h3>Mes projets:</h3>
+
+            <details class="accordion">
+                <summary>Projet Red</summary>
+                <div class="accordion-content">
+                    <p>Voici mon Projet Red</p>
+                    <p>
+                        Voir le Projet
+                        <a href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot"
+                           target="_blank" rel="noopener noreferrer">
+                            Click ici
+                        </a>
+                    </p>
+                </div>
+            </details>
+
+            <details class="accordion">
+                <summary>Pi-hole</summary>
+                <div class="accordion-content">
+                    <p>Voici mon projet Pi-hole</p>
+                    <p>
+                        Voir le projet
+                        <a href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot"
+                           target="_blank" rel="noopener noreferrer">
+                            Click ici
+                        </a>
+                    </p>
+                </div>
+            </details>
+        </figure>
+    </main>
+
     <footer>
-        <p style = "text-align: center">© 2026 Enzo Zaragoci.</p>
+        <p>© 2026 Enzo Zaragoci.</p>
     </footer>
+</body>
 </html>
