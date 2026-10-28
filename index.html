@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,33 +10,52 @@
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
         <h3>Enzo Zaragoci</h3>
-        <a href="index.html">Accueil</a>
-        <a href="contact.html">Contact</a>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
+    <!-- MAIN CONTENT -->
     <main>
-        <img src="Photo professionel.jpg"
-             alt="Photo professionnel"
-             width="150"
-             height="200">
 
-        <h3 style="text-align:center">Enzo Zaragoci</h3>
+        <!-- PROFILE -->
+        <section class="profil">
 
-        <p style="text-align:center">
-            Étudiant Bachelor 1 de cybersécurité à Ynov Sophia,
-            je m’intéresse au domaine de la cybersécurité et
-            le réseau. Je cherche une alternance/stage
-            pour la rentrée 2027.
-        </p>
+            <img
+                src="Photo professionel.jpg"
+                alt="Photo professionnel"
+                width="150"
+                height="200"
+            >
 
-        <figure>
+            <h3>Enzo Zaragoci</h3>
+
+            <p>
+                Étudiant Bachelor 1 de cybersécurité à Ynov Sophia,
+                je m’intéresse au domaine de la cybersécurité
+                et le réseau. Je cherche une alternance/stage
+                pour la rentrée 2027.
+            </p>
+
+        </section>
+
+        <!-- COMPETENCES -->
+        <section class="competences">
+
             <h3>Compétences:</h3>
 
             <details class="accordion">
+
                 <summary>Mes compétences</summary>
+
                 <div class="accordion-content">
+
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -45,43 +65,74 @@
                         <li>SQL</li>
                         <li>Python</li>
                     </ul>
+
                 </div>
+
             </details>
+
+        </section>
+
+        <!-- PROJETS -->
+        <section class="projets">
 
             <h3>Mes projets:</h3>
 
+            <!-- PROJET RED -->
             <details class="accordion">
+
                 <summary>Projet Red</summary>
+
                 <div class="accordion-content">
+
                     <p>Voici mon Projet Red</p>
+
                     <p>
-                        Voir le Projet
-                        <a href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot"
-                           target="_blank" rel="noopener noreferrer">
+                        Voir le Projet :
+                        <a
+                            href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Click ici
                         </a>
                     </p>
+
                 </div>
+
             </details>
 
+            <!-- PI-HOLE -->
             <details class="accordion">
+
                 <summary>Pi-hole</summary>
+
                 <div class="accordion-content">
+
                     <p>Voici mon projet Pi-hole</p>
+
                     <p>
-                        Voir le projet
-                        <a href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot"
-                           target="_blank" rel="noopener noreferrer">
+                        Voir le projet :
+                        <a
+                            href="https://github.com/ItsForTheVibes/Projet-Red-Mr-Ybot"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Click ici
                         </a>
                     </p>
+
                 </div>
+
             </details>
-        </figure>
+
+        </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Enzo Zaragoci.</p>
     </footer>
+
 </body>
 </html>

@@ -1,67 +1,176 @@
 
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #0F172A;
+    color: #E2E8F0;
+}
+
+h2, h3, a {
+    color: #38BDF8;
+}
+
+p, li {
+    color: #E2E8F0;
+}
+
+/* HEADER */
+
+header {
+    background-color: #1E293B;
+    padding: 20px;
+    text-align: left;
+}
+
+header h3 {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #38BDF8;
+    margin-right: 5px;
+}
+
+/* MAIN */
+
+main {
+    padding: 30px;
+    flex: 1;
+}
+
+/* PROFILE */
+
+.profil {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profil img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+.profil h3 {
+    margin-top: 20px;
+}
+
+.profil p {
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* SECTIONS */
+
+.competences,
+.projets {
+    margin-bottom: 25px;
+}
+
+.competences h3,
+.projets h3 {
+    color: #38BDF8;
+    margin-bottom: 15px;
+}
+
 /* ACCORDION */
 
 .accordion {
     background-color: #1E293B;
-    border: 1px solid #E2E8F0;
+    border: 1px solid #334155;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     overflow: hidden;
+    transition: border-color 0.3s ease;
 }
 
-/* Clickable title */
+/* ACCORDION TITLE */
+
 .accordion summary {
     padding: 20px;
     color: #38BDF8;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+
     list-style: none;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    transition: background-color 0.3s ease;
 }
 
-/* Hide default arrow */
+/* REMOVE DEFAULT ARROW */
+
 .accordion summary::-webkit-details-marker {
     display: none;
 }
 
-/* Custom arrow */
+/* CUSTOM PLUS ICON */
+
 .accordion summary::after {
     content: "+";
-    font-size: 24px;
+    font-size: 25px;
     color: #38BDF8;
     transition: transform 0.3s ease;
 }
 
-/* Change icon when open */
+/* MINUS ICON WHEN OPEN */
+
 .accordion[open] summary::after {
     content: "−";
 }
 
-/* Hover effect */
+/* HOVER EFFECT */
+
 .accordion summary:hover {
     background-color: #334155;
 }
 
-/* Opened accordion */
+/* OPEN ACCORDION */
+
 .accordion[open] {
     border-color: #38BDF8;
 }
 
-/* Accordion content */
+/* ACCORDION CONTENT */
+
 .accordion-content {
     padding: 0 20px 20px;
     color: #E2E8F0;
+
     animation: fadeIn 0.3s ease;
+}
+
+.accordion-content p,
+.accordion-content li {
+    color: #E2E8F0;
+}
+
+.accordion-content ul {
+    padding-left: 20px;
+}
+
+.accordion-content li {
+    margin-bottom: 8px;
 }
 
 .accordion-content a {
     color: #38BDF8;
 }
 
-/* Animation */
+/* OPENING ANIMATION */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -74,8 +183,31 @@
     }
 }
 
-/* Mobile */
+/* FOOTER */
+
+footer {
+    background-color: #1E293B;
+    color: #E2E8F0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* MOBILE RESPONSIVE */
+
 @media (max-width: 600px) {
+
+    main {
+        padding: 20px;
+    }
+
+    .profil p {
+        font-size: 15px;
+    }
+
     .accordion summary {
         padding: 15px;
         font-size: 16px;
@@ -85,7 +217,4 @@
         padding: 0 15px 15px;
     }
 
-    figure {
-        margin: 15px 0;
-    }
 }
