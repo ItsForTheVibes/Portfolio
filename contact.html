@@ -4,73 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contacter Enzo Zaragoci, étudiant en cybersécurité à Ynov Sophia.">
+    <meta name="description" content="Contacter Enzo Zaragoci pour une opportunité de stage, d'alternance ou un projet en cybersécurité.">
+    <meta name="theme-color" content="#0B1120">
     <title>Contact | Enzo Zaragoci</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="site-header">
-        <nav class="navbar navbar-expand-lg container-xl">
-            <a class="navbar-brand" href="index.html">EZ<span>.</span> <small>ENZO ZARAGOCI</small></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Afficher le menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar navbar-expand-lg container-xl" aria-label="Navigation principale">
+            <a class="navbar-brand" href="index.html">EZ<span>.</span><small>ENZO ZARAGOCI</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Ouvrir le menu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="index.html#apropos">À propos</a>
                     <a class="nav-link" href="index.html#competences">Compétences</a>
                     <a class="nav-link" href="index.html#projets">Projets</a>
                     <a class="nav-link" href="index.html#experiences">Expériences</a>
                     <a class="nav-link" href="index.html#formation">Formation</a>
-                    <a class="nav-link nav-contact" href="contact.html">Contact ↗</a>
+                    <a class="nav-link nav-contact active" href="contact.html" aria-current="page">Contact ↗</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main class="contact-page container-xl">
-        <p class="section-number">CONTACT / RESTONS EN CONTACT</p>
-        <h1>Parlons de votre <span>projet.</span></h1>
-        <p class="contact-intro">Vous souhaitez échanger sur la cybersécurité, les réseaux ou une opportunité de stage ou d'alternance ? N'hésitez pas à me contacter. Je suis toujours intéressé par de nouvelles expériences et opportunités d'apprentissage.</p>
-
+        <p class="section-index reveal">CONTACT / ÉCHANGEONS</p>
+        <h1 class="reveal">Restons en <span>contact.</span></h1>
+        <p class="contact-intro reveal">Une opportunité de stage ou d'alternance, un projet ou une question sur la cybersécurité ? Je suis disponible pour échanger.</p>
         <div class="contact-grid">
-            <a class="contact-card" href="mailto:enzozaragoci71@gmail.com">
-                <span class="contact-icon">✉</span>
+            <div class="contact-card reveal">
+                <span class="contact-card-index">01 / EMAIL</span>
+                <span class="contact-card-icon">✉</span>
                 <h2>Email</h2>
                 <p>enzozaragoci71@gmail.com</p>
-                <span class="contact-action">Envoyer un email ↗</span>
-            </a>
-            <a class="contact-card" href="https://www.linkedin.com/in/enzo-zaragoci-986246273/" target="_blank" rel="noopener noreferrer">
-                <span class="contact-icon">in</span>
+                <div class="contact-card-actions">
+                    <a href="mailto:enzozaragoci71@gmail.com">Écrire ↗</a>
+                    <button class="copy-email" type="button" data-email="enzozaragoci71@gmail.com">Copier l'adresse</button>
+                </div>
+            </div>
+            <a class="contact-card reveal" href="https://www.linkedin.com/in/enzo-zaragoci-986246273/" target="_blank" rel="noopener noreferrer">
+                <span class="contact-card-index">02 / LINKEDIN</span>
+                <span class="contact-card-icon">in</span>
                 <h2>LinkedIn</h2>
-                <p>Retrouvez mon parcours, ma formation et mes expériences professionnelles.</p>
-                <span class="contact-action">Voir mon profil ↗</span>
+                <p>Mon parcours, mes études et mes expériences.</p>
+                <span class="contact-link">Voir mon profil ↗</span>
             </a>
-            <a class="contact-card" href="https://github.com/ItsForTheVibes" target="_blank" rel="noopener noreferrer">
-                <span class="contact-icon">&lt;/&gt;</span>
+            <a class="contact-card reveal" href="https://github.com/ItsForTheVibes" target="_blank" rel="noopener noreferrer">
+                <span class="contact-card-index">03 / GITHUB</span>
+                <span class="contact-card-icon">&lt;/&gt;</span>
                 <h2>GitHub</h2>
-                <p>Découvrez mes projets personnels et mon apprentissage du développement.</p>
-                <span class="contact-action">Voir mes projets ↗</span>
+                <p>Mes projets personnels et dépôts de code.</p>
+                <span class="contact-link">Voir mes projets ↗</span>
             </a>
-            <a class="contact-card" href="https://tryhackme.com/p/ItsForTheVibes" target="_blank" rel="noopener noreferrer">
-                <span class="contact-icon">⌘</span>
+            <a class="contact-card reveal" href="https://tryhackme.com/p/ItsForTheVibes" target="_blank" rel="noopener noreferrer">
+                <span class="contact-card-index">04 / TRYHACKME</span>
+                <span class="contact-card-icon">⌘</span>
                 <h2>TryHackMe</h2>
-                <p>Suivez ma progression et mes activités de formation en cybersécurité.</p>
-                <span class="contact-action">Voir mon profil ↗</span>
+                <p>Mes labs et ma progression en cybersécurité.</p>
+                <span class="contact-link">Voir mon profil ↗</span>
             </a>
         </div>
+        <a class="back-link" href="index.html">← Retour au portfolio</a>
     </main>
 
     <footer>
-        <div class="container-xl footer-inner">
+        <div class="container-xl footer-content">
             <p>© 2026 Enzo Zaragoci</p>
             <p>Cybersécurité · Linux · Réseaux</p>
-            <a href="index.html">Retour à l'accueil ↑</a>
+            <a href="index.html">Accueil ↑</a>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut de la page">↑</button>
+    <div class="site-toast" id="siteToast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
